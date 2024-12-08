@@ -1,0 +1,36 @@
+package practiseJavaProgram;
+
+	
+	import java.util.Scanner;
+
+	public class DivisionByZeroException {
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        
+	        try {
+	            System.out.print("Enter the numerator: ");
+	            int numerator = scanner.nextInt();
+	            
+	            System.out.print("Enter the denominator: ");
+	            int denominator = scanner.nextInt();
+	            
+	            // Division operation that might throw an exception
+	            int result = numerator / denominator;
+	            System.out.println("Result: " + result);
+	        } 
+	        // Catching ArithmeticException when dividing by zero
+	        catch (ArithmeticException e) {
+	            System.out.println("Error: Cannot divide by zero.");
+	        } 
+	        // Catching other exceptions, such as input mismatch
+	        catch (Exception e) {
+	            System.out.println("Error: " + e.getMessage());
+	        } 
+	        finally {
+	            // Always execute this block, even if an exception occurs
+	            System.out.println("End of division operation.");
+	            scanner.close();
+	        }
+	    }
+	}
+

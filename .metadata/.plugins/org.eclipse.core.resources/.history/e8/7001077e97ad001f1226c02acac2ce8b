@@ -1,0 +1,10 @@
+package takingScreenShot;
+
+public class TakingScreenShotDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

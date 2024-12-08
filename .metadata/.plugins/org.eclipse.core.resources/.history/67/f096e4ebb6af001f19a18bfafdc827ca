@@ -1,0 +1,20 @@
+package practiseJavaProgram;
+
+public class ReverseOfString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		StringBuffer sb = new StringBuffer("Hello world");
+		StringBuffer reverse = sb.reverse();
+      	System.out.println(reverse);
+	
+
+		
+	//	StringBuilder sb = new StringBuilder("Hello World");
+	//	StringBuilder reverse = sb.reverse();
+	//	System.out.println(reverse);
+		
+	}       
+
+}

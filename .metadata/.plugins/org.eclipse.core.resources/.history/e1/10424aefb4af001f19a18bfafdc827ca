@@ -1,0 +1,14 @@
+package practiseJavaProgram;
+
+public class ReverseArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String original = "Hello, World!";
+	
+      System.out.println(original.charAt(1));
+		
+	}
+
+}

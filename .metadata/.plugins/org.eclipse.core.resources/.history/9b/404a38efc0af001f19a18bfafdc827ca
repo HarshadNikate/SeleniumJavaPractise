@@ -1,0 +1,5 @@
+package practiseJavaProgram;
+
+public class DivideByZerohandleException {
+
+}

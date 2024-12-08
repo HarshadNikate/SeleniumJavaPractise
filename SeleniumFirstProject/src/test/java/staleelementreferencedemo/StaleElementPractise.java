@@ -1,0 +1,32 @@
+package staleelementreferencedemo;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class StaleElementPractise {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://omayo.blogspot.com/");
+		
+		List<WebElement> options = driver.findElements(By.xpath("//div[@class='widget LinkList']//a"));
+		
+		for(WebElement option :options)
+		{
+			option.click();
+			Thread.sleep(3000);
+			driver.navigate().back();
+		}
+		driver.quit();
+		
+		
+		
+	}
+
+}

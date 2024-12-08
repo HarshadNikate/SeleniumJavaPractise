@@ -1,0 +1,11 @@
+package practiseJavaProgram;
+
+public class SecondlargestNoInArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Minimum value of int: " + Integer.MIN_VALUE);
+	}
+
+}
